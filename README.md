@@ -27,13 +27,13 @@ from datamax_printer import DPLPrinter
 printer = DPLPrinter('<ip of the printer>')
 printer.configure()
 printer.start_document()
+printer.set_encoding("CP")
 printer.set_qr_code(285, 120, 'https://www.innetag.ch/', 9)
 printer.set_label(300, 60, 'innetag.ch', 9, 10)
 printer.print()
 ```
 
-Please check the `example.py` file in [our GitHub repository](https://github.com/inNETMonitoring/datamax-python-adapter)
-for a working example.
+Please check the `example.py` file for a working example.
 
 ## Ressources
 
